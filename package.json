@@ -1,0 +1,16 @@
+{
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-connect": "^5.5.0",
+        "gulp-pug": "^3.3.0",
+        "gulp-ruby-sass": "^3.0.0",
+        "gulp-uglify": "^3.0.0"
+    },
+    "name": "myPage",
+    "version": "1.0.0",
+    "description": "My Personal Page",
+    "main": "index.js",
+    "repository": "https://github.com/chrisjcom/chrisjcom.github.io.git",
+    "author": "Jhossymar Contreras <chrisj_contreras@outlook.com>",
+    "license": "MIT"
+}
