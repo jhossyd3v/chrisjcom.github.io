@@ -8,7 +8,7 @@ const   gulp    = require('gulp'),
 gulp.task('server',() =>
 {
     connect.server({
-        root: 'app',
+        root: 'dev',
         livereload: true
     });
 });
@@ -23,13 +23,13 @@ gulp.task('server-dist',()=>
 });
 
 gulp.task('pug', () => {
-    gulp.src('./dev/pug/*.pug')
+    gulp.src('dev/pug/*.pug')
         .pipe(pug(
             {
                 pretty: true
             }
         ))
-        .pipe(gulp.dest('./dev/'))
+        .pipe(gulp.dest('dev/'))
         .pipe(connect.reload());
 });
 
