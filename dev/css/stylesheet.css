@@ -1,0 +1,62 @@
+body
+{
+    padding-top : 10px;
+    background : #f9f9f9;
+}
+img
+{
+    width : 100%;
+}
+.contact-media
+{
+    margin-top : 20px;
+    margin-bottom : 20px;
+    font-size : 1.5rem;
+}
+.contact-media i
+{
+    font-size : 2rem;
+    /* color : #b55826; */
+}
+.contact-media a
+{
+    color : #b55826;
+}
+.fa-linkedin
+{
+    color : #0077b5;
+}
+.fa-github
+{
+    color : #333;
+}
+.fa-twitter
+{
+    color : #55acee;
+}
+.page-section
+{
+    color : #b55826;
+}
+.page-item
+{
+    color : #333;
+    text-align : left;
+}
+.page-item__title
+{
+    font-size : 1.5rem;
+    color : #b55826;
+}
+.page-item__period-of-time
+{
+    font-size : 1rem;
+}
+.page-item__position
+{
+    font-size : 0.8rem;
+}
+.page-item__content
+{
+    font-size : 1rem;
+}

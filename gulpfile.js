@@ -41,7 +41,7 @@ gulp.task('scripts', () => {
 
 gulp.task('styles', () => {
     gulp.src('./dev/scss/**/*.scss')
-        .pipe(sass())
+        .pipe(sass().on('error',sass.logError))
         .pipe(gulp.dest('./dev/css/'))
         .pipe(connect.reload());
 });
