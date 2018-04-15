@@ -7,6 +7,19 @@ img
 {
     width : 100%;
 }
+.photo, .logo
+{    
+    margin : 0 auto;
+    display : block;
+}
+.photo
+{
+    width : 50%;
+}
+.logo
+{
+    width : 90%;
+}
 .contact-media
 {
     margin-top : 20px;
@@ -21,6 +34,7 @@ img
 .contact-media a
 {
     color : #b55826;
+    padding : 5px;
 }
 .fa-linkedin
 {
@@ -34,9 +48,28 @@ img
 {
     color : #55acee;
 }
+.fa-medium
+{
+    color : black;
+}
+a.outlook
+{
+    color : #0072c6;
+}
+a.gmail
+{
+    color : #ea4335;
+}
+a.dev-link
+{
+    background : #0a0a0a;
+    color : #fff;
+    /* padding : 5px; */
+}
 .page-section
 {
     color : #b55826;
+    padding : 0 30px;
 }
 .page-item
 {
