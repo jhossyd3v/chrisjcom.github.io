@@ -28,7 +28,20 @@ function changeTechnologiesDisplayState(event) {
 async function getProjects() {
     const response = await fetch("./data/projects.json");
     const projects = await response.json();
-    return projects;
+    let sortedProjects = sortProjectsByOrder(projects);
+    return sortedProjects;
+}
+
+function sortProjectsByOrder(projects = []) {
+    return projects.sort((projectA, projectB) => {
+        if(projectA.order < projectB.order) {
+            return -1;
+        } else if(projectA.order > projectB.order) {
+            return 1;
+        } else {
+            return 0;
+        }
+    })
 }
 
 async function drawProjects() {

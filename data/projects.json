@@ -1,5 +1,6 @@
 [
     {
+        "order": 3,
         "id": "001",
         "title": "Parsel Translator",
         "type": "personal",
@@ -17,11 +18,11 @@
             }
         ],
         "descriptions": [
-            "In the world of Harry Potter there is a language to talk with the snakes, it's called Parseltongue.",
-            "As a Potterhead I decided to build a translator Human-Parsel & Parsel-Human."
+            "In the world of Harry Potter there is a language to talk with the snakes, it's called Parseltongue",
+            "This is a Human-Parsel & Parsel-Human translator."
         ],
         "tags": [
-            "Web",
+            "Web App",
             "Responsive Design"
         ],
         "technologies": [
@@ -56,6 +57,7 @@
         }
     },
     {
+        "order": 9,
         "id": "002",
         "title": "Pokédex",
         "type": "challenge",
@@ -115,6 +117,7 @@
         }
     },
     {
+        "order": 1,
         "id": "003",
         "title": "World Cup Draw Simulator",
         "type": "company",
@@ -130,7 +133,7 @@
             "A simulator of the groups draw for the World Cup Qatar 2002."
         ],
         "tags": [
-            "Web",
+            "Web App",
             "Responsive Design"
         ],
         "technologies": [
@@ -157,6 +160,637 @@
             {
                 "icon": "",
                 "text": "Local Storage"
+            },
+            {
+                "icon": "",
+                "text": "Normalize"
+            }
+        ],
+        "previewImages": {
+            "desktop": 1,
+            "mobile": 0
+        }
+    },
+    {
+        "order": 7,
+        "id": "004",
+        "title": "AFP quota Calculator",
+        "type": "company",
+        "typeText": "LPG",
+        "links": [
+            {
+                "icon": "",
+                "type": "link",
+                "link": "https://www.laprensagrafica.com/elsalvador/Como-se-calculara-tu-cotizacion-a-la-AFP-con-la-nueva-ley-de-pensiones-20230110-0071.html"
+            }
+        ],
+        "descriptions": [
+            "Web application to calculate the AFP quota after the 2022 reform."
+        ],
+        "tags": [
+            "Web App",
+            "Responsive Design"
+        ],
+        "technologies": [
+            {
+                "icon": "devicon-javascript-plain",
+                "text": "Javascript"
+            },
+            {
+                "icon": "devicon-sass-plain",
+                "text": "Sass"
+            },
+            {
+                "icon": "devicon-html5-plain",
+                "text": "HTML5"
+            },
+            {
+                "icon": "devicon-css3-plain",
+                "text": "CSS3"
+            },
+            {
+                "icon": "",
+                "text": "Normalize"
+            }
+        ],
+        "previewImages": {
+            "desktop": 1,
+            "mobile": 0
+        }
+    },
+    {
+        "order": 2,
+        "id": "005",
+        "title": "Crop Production History",
+        "type": "company",
+        "typeText": "Séptimo Sentido",
+        "links": [
+            {
+                "icon": "",
+                "type": "link",
+                "link": "https://7s.laprensagrafica.com/el-pais-que-pierde-su-comida-por-abandonar-la-siembra/"
+            }
+        ],
+        "descriptions": [
+            "An interactive chart that shows the production of some crops in differente presidential periods."
+        ],
+        "tags": [
+            "Interactive Chart",
+            "Responsive Design"
+        ],
+        "technologies": [
+            {
+                "icon": "devicon-javascript-plain",
+                "text": "Javascript"
+            },
+            {
+                "icon": "devicon-sass-plain",
+                "text": "Sass"
+            },
+            {
+                "icon": "devicon-html5-plain",
+                "text": "HTML5"
+            },
+            {
+                "icon": "devicon-css3-plain",
+                "text": "CSS3"
+            },
+            {
+                "icon": "",
+                "text": "amCharts"
+            },
+            {
+                "icon": "",
+                "text": "Normalize"
+            }
+        ],
+        "previewImages": {
+            "desktop": 1,
+            "mobile": 0
+        }
+    },
+    {
+        "order": 10,
+        "id": "006",
+        "title": "Before/After National Library",
+        "type": "company",
+        "typeText": "LPG",
+        "links": [
+            {
+                "icon": "",
+                "type": "link",
+                "link": "https://www.laprensagrafica.com/elsalvador/Terrenos-para-nueva-biblioteca-costaron-3.35-mill-20221102-0072.html"
+            }
+        ],
+        "descriptions": [
+            "An interactive widget that shows with a draggable element the differences between images before and after starting the construction of the new National Library."
+        ],
+        "tags": [
+            "Interactive Widget",
+            "Responsive Design"
+        ],
+        "technologies": [
+            {
+                "icon": "devicon-javascript-plain",
+                "text": "Javascript"
+            },
+            {
+                "icon": "devicon-sass-plain",
+                "text": "Sass"
+            },
+            {
+                "icon": "devicon-html5-plain",
+                "text": "HTML5"
+            },
+            {
+                "icon": "devicon-css3-plain",
+                "text": "CSS3"
+            },
+            {
+                "icon": "",
+                "text": "Normalize"
+            }
+        ],
+        "previewImages": {
+            "desktop": 1,
+            "mobile": 0
+        }
+    },
+    {
+        "order": 11,
+        "id": "007",
+        "title": "Lake Ouija - Map",
+        "type": "company",
+        "typeText": "LPG",
+        "links": [
+            {
+                "icon": "",
+                "type": "link",
+                "link": "https://www.laprensagrafica.com/elsalvador/La-sordera-de-dos-paises--asfixia-a-Guija-20221002-0064.html"
+            }
+        ],
+        "descriptions": [
+            "An interactive widget that displays a map with information about the rivers where Lake Ouija flows into."
+        ],
+        "tags": [
+            "Interactive Widget",
+            "Responsive Design"
+        ],
+        "technologies": [
+            {
+                "icon": "devicon-javascript-plain",
+                "text": "Javascript"
+            },
+            {
+                "icon": "devicon-sass-plain",
+                "text": "Sass"
+            },
+            {
+                "icon": "devicon-html5-plain",
+                "text": "HTML5"
+            },
+            {
+                "icon": "devicon-css3-plain",
+                "text": "CSS3"
+            },
+            {
+                "icon": "",
+                "text": "Leaflet"
+            },
+            {
+                "icon": "",
+                "text": "Normalize"
+            }
+        ],
+        "previewImages": {
+            "desktop": 1,
+            "mobile": 0
+        }
+    },
+    {
+        "order": 5,
+        "id": "008",
+        "title": "Live Champions League 2022-2023 Draw",
+        "type": "company",
+        "typeText": "El Gráfico",
+        "links": [
+        ],
+        "descriptions": [
+            "A web application that allows adding or removing teams in a group to show in the live program, called 'El Gráfico TV', for the Champions League 2022-2023 draw."
+        ],
+        "tags": [
+            "Web App"
+        ],
+        "technologies": [
+            {
+                "icon": "devicon-javascript-plain",
+                "text": "Javascript"
+            },
+            {
+                "icon": "devicon-sass-plain",
+                "text": "Sass"
+            },
+            {
+                "icon": "devicon-html5-plain",
+                "text": "HTML5"
+            },
+            {
+                "icon": "devicon-css3-plain",
+                "text": "CSS3"
+            },
+            {
+                "icon": "",
+                "text": "Local Storage"
+            },
+            {
+                "icon": "",
+                "text": "Normalize"
+            }
+        ],
+        "previewImages": {
+            "desktop": 1,
+            "mobile": 0
+        }
+    },
+    {
+        "order": 12,
+        "id": "009",
+        "title": "Live World Cup Qatar 2022 Draw",
+        "type": "company",
+        "typeText": "El Gráfico",
+        "links": [
+        ],
+        "descriptions": [
+            "A web application that allows adding or removing teams in a group to show in the live program, called 'El Gráfico TV', for the 'World Cup Qatar 2022' draw."
+        ],
+        "tags": [
+            "Web App"
+        ],
+        "technologies": [
+            {
+                "icon": "devicon-javascript-plain",
+                "text": "Javascript"
+            },
+            {
+                "icon": "devicon-sass-plain",
+                "text": "Sass"
+            },
+            {
+                "icon": "devicon-html5-plain",
+                "text": "HTML5"
+            },
+            {
+                "icon": "devicon-css3-plain",
+                "text": "CSS3"
+            },
+            {
+                "icon": "",
+                "text": "Local Storage"
+            },
+            {
+                "icon": "",
+                "text": "Normalize"
+            }
+        ],
+        "previewImages": {
+            "desktop": 1,
+            "mobile": 0
+        }
+    },
+    {
+        "order": 4,
+        "id": "010",
+        "title": "Match Statistics - World Cup Qatar 2022",
+        "type": "company",
+        "typeText": "El Gráfico",
+        "links": [
+        ],
+        "descriptions": [
+            "A web application that consumed Google Sheets where a person had to write statistics of each World Cup match after it had ended, and allowed the statistics of each match to be shown in the live program, called 'La Mezquita', which was broadcast at the end of the match."
+        ],
+        "tags": [
+            "Web App"
+        ],
+        "technologies": [
+            {
+                "icon": "devicon-javascript-plain",
+                "text": "Javascript"
+            },
+            {
+                "icon": "devicon-sass-plain",
+                "text": "Sass"
+            },
+            {
+                "icon": "devicon-html5-plain",
+                "text": "HTML5"
+            },
+            {
+                "icon": "devicon-css3-plain",
+                "text": "CSS3"
+            },
+            {
+                "icon": "",
+                "text": "Google Sheets"
+            },
+            {
+                "icon": "",
+                "text": "Normalize"
+            }
+        ],
+        "previewImages": {
+            "desktop": 1,
+            "mobile": 0
+        }
+    },
+    {
+        "order": 6,
+        "id": "011",
+        "title": "Groups - World Cup Qatar 2022",
+        "type": "company",
+        "typeText": "El Gráfico",
+        "links": [
+        ],
+        "descriptions": [
+            "A web application that consumed Google Sheets where a person had to modify points of each team in a group after the end of a match, and allowed to show the information of each group in the live program, called 'La Mezquita', which was broadcast at the end of the match."
+        ],
+        "tags": [
+            "Web App"
+        ],
+        "technologies": [
+            {
+                "icon": "devicon-javascript-plain",
+                "text": "Javascript"
+            },
+            {
+                "icon": "devicon-sass-plain",
+                "text": "Sass"
+            },
+            {
+                "icon": "devicon-html5-plain",
+                "text": "HTML5"
+            },
+            {
+                "icon": "devicon-css3-plain",
+                "text": "CSS3"
+            },
+            {
+                "icon": "",
+                "text": "Google Sheets"
+            },
+            {
+                "icon": "",
+                "text": "Normalize"
+            }
+        ],
+        "previewImages": {
+            "desktop": 1,
+            "mobile": 0
+        }
+    },
+    {
+        "order": 8,
+        "id": "012",
+        "title": "Elimination Bracket - World Cup Qatar 2022",
+        "type": "company",
+        "typeText": "El Gráfico",
+        "links": [
+        ],
+        "descriptions": [
+            "A web application that consumed Google Sheets where a person had to write the result of each 'World Cup Qatar 2022' match after it had ended, and allowed to show the results of the matches and next matches in the final phase of the competition in the live program called 'El Gráfico TV'."
+        ],
+        "tags": [
+            "Web App"
+        ],
+        "technologies": [
+            {
+                "icon": "devicon-javascript-plain",
+                "text": "Javascript"
+            },
+            {
+                "icon": "devicon-sass-plain",
+                "text": "Sass"
+            },
+            {
+                "icon": "devicon-html5-plain",
+                "text": "HTML5"
+            },
+            {
+                "icon": "devicon-css3-plain",
+                "text": "CSS3"
+            },
+            {
+                "icon": "",
+                "text": "Google Sheets"
+            },
+            {
+                "icon": "",
+                "text": "Normalize"
+            }
+        ],
+        "previewImages": {
+            "desktop": 1,
+            "mobile": 0
+        }
+    },
+    {
+        "order": 13,
+        "id": "013",
+        "title": "Elimination Bracket - CONCACAF Under 17 2023",
+        "type": "company",
+        "typeText": "El Gráfico",
+        "links": [
+        ],
+        "descriptions": [
+            "A web application that consumed Google Sheets where a person had to write the result of each 'CONCACAF Under 17' 2023 match after it had ended, and allowed to show the results of the matches and next matches in the final phase of the competition in the live program called 'El Gráfico TV'."
+        ],
+        "tags": [
+            "Web App"
+        ],
+        "technologies": [
+            {
+                "icon": "devicon-javascript-plain",
+                "text": "Javascript"
+            },
+            {
+                "icon": "devicon-sass-plain",
+                "text": "Sass"
+            },
+            {
+                "icon": "devicon-html5-plain",
+                "text": "HTML5"
+            },
+            {
+                "icon": "devicon-css3-plain",
+                "text": "CSS3"
+            },
+            {
+                "icon": "",
+                "text": "Google Sheets"
+            },
+            {
+                "icon": "",
+                "text": "Normalize"
+            }
+        ],
+        "previewImages": {
+            "desktop": 1,
+            "mobile": 0
+        }
+    },
+    {
+        "order": 14,
+        "id": "014",
+        "title": "#MenosAgroMenosComida Special",
+        "type": "company",
+        "typeText": "Séptimo Sentido",
+        "links": [
+            {
+                "icon": "",
+                "type": "link",
+                "link": "https://7s.laprensagrafica.com/menos-agro-menos-comida/"
+            }
+        ],
+        "descriptions": [
+            "This is a landing page for a group of articles in a special called 'Menos agro menos comida' for Séptimo Sentido magazine."
+        ],
+        "tags": [
+            "Landing Page",
+            "Responsive Design"
+        ],
+        "technologies": [
+            {
+                "icon": "devicon-javascript-plain",
+                "text": "Javascript"
+            },
+            {
+                "icon": "devicon-sass-plain",
+                "text": "Sass"
+            },
+            {
+                "icon": "devicon-html5-plain",
+                "text": "HTML5"
+            },
+            {
+                "icon": "devicon-css3-plain",
+                "text": "CSS3"
+            },
+            {
+                "icon": "devicon-wordpress-plain",
+                "text": "Wordpress"
+            },
+            {
+                "icon": "devicon-php-plain",
+                "text": "Php"
+            },
+            {
+                "icon": "",
+                "text": "Normalize"
+            }
+        ],
+        "previewImages": {
+            "desktop": 1,
+            "mobile": 0
+        }
+    },
+    {
+        "order": 15,
+        "id": "015",
+        "title": "#MagisterioEnCrisis Special",
+        "type": "company",
+        "typeText": "Séptimo Sentido",
+        "links": [
+            {
+                "icon": "",
+                "type": "link",
+                "link": "https://7s.laprensagrafica.com/magisterio-en-crisis/"
+            }
+        ],
+        "descriptions": [
+            "This is a landing page for a group of articles in a special called 'Magisterio en Crisis' for Séptimo Sentido magazine."
+        ],
+        "tags": [
+            "Landing Page",
+            "Responsive Design"
+        ],
+        "technologies": [
+            {
+                "icon": "devicon-javascript-plain",
+                "text": "Javascript"
+            },
+            {
+                "icon": "devicon-sass-plain",
+                "text": "Sass"
+            },
+            {
+                "icon": "devicon-html5-plain",
+                "text": "HTML5"
+            },
+            {
+                "icon": "devicon-css3-plain",
+                "text": "CSS3"
+            },
+            {
+                "icon": "devicon-wordpress-plain",
+                "text": "Wordpress"
+            },
+            {
+                "icon": "devicon-php-plain",
+                "text": "Php"
+            },
+            {
+                "icon": "",
+                "text": "Normalize"
+            }
+        ],
+        "previewImages": {
+            "desktop": 1,
+            "mobile": 0
+        }
+    },
+    {
+        "order": 16,
+        "id": "016",
+        "title": "#LaTierraHerida Special",
+        "type": "company",
+        "typeText": "Séptimo Sentido",
+        "links": [
+            {
+                "icon": "",
+                "type": "link",
+                "link": "https://7s.laprensagrafica.com/la-tierra-herida/"
+            }
+        ],
+        "descriptions": [
+            "This is a landing page for a group of articles in a special called 'La Tierra Herida' for Séptimo Sentido magazine."
+        ],
+        "tags": [
+            "Landing Page",
+            "Responsive Design"
+        ],
+        "technologies": [
+            {
+                "icon": "devicon-javascript-plain",
+                "text": "Javascript"
+            },
+            {
+                "icon": "devicon-sass-plain",
+                "text": "Sass"
+            },
+            {
+                "icon": "devicon-html5-plain",
+                "text": "HTML5"
+            },
+            {
+                "icon": "devicon-css3-plain",
+                "text": "CSS3"
+            },
+            {
+                "icon": "devicon-wordpress-plain",
+                "text": "Wordpress"
+            },
+            {
+                "icon": "devicon-php-plain",
+                "text": "Php"
             },
             {
                 "icon": "",

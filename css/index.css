@@ -482,7 +482,7 @@ body {
 .cjdev__project {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-bottom: 30px;
+  margin: 20px 0;
 }
 .cjdev__project__image_container {
   border: 1px solid #b55826;
@@ -683,7 +683,7 @@ body {
     display: flex;
     padding: 10px 20px;
     position: relative;
-    width: 100%;
+    width: 95%;
   }
   .cjdev__project__image_container {
     border-radius: 0;
@@ -698,6 +698,8 @@ body {
   .cjdev__project__information {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    padding-bottom: 30px;
+    padding-top: 30px;
     width: 60%;
   }
   .cjdev__project:nth-child(odd) {
@@ -713,6 +715,7 @@ body {
   .cjdev__project:nth-child(odd) .cjdev__project__information {
     border-radius: 0 15px 0 15px;
     padding-left: 60px;
+    padding-right: 30px;
   }
   .cjdev__project:nth-child(even) {
     -webkit-box-pack: start;
@@ -730,6 +733,7 @@ body {
   }
   .cjdev__project:nth-child(even) .cjdev__project__information {
     border-radius: 15px 0 15px 0;
+    padding-left: 30px;
     padding-right: 60px;
   }
   .cjdev__interest {
