@@ -1,0 +1,124 @@
+@use "colors";
+
+@media (min-width: 800px) {
+    .cjdev {
+        &__menu {
+            padding: 10px 0;
+            position: relative;
+            top: 0;
+            bottom: unset;
+
+            &__list {
+                border: none;
+            }
+
+            &__link {
+                padding: 0;
+
+                &:hover {
+                    background-color: colors.$blackOdd;
+                    color: colors.$orangev2;
+                }
+            }
+
+            &__item {
+                border: none;
+                margin: 0 10px;
+                width: auto;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 20px;
+                }
+
+                &__text {
+                    display: inline;
+                }
+            }
+        }
+
+        &__section {
+            padding: 20px 15%;
+        }
+
+        &__levels {
+            padding: 10px 15vw;
+        }
+
+        &__experience {
+            max-width: 40%;
+        }
+
+        &__project {
+            box-sizing: border-box;
+            display: flex;
+            padding: 10px 20px;
+            position: relative;
+            width: 100%;
+
+            &__image_container {
+                border-radius: 0;
+                line-height: 0;
+                height: fit-content;
+                margin: auto;
+                position: absolute;
+                width: 45%;
+            }
+
+            &__information {
+                box-sizing: border-box;
+                width: 60%;
+            }
+
+            &:nth-child(odd) {
+                justify-content: flex-end;
+
+                .cjdev__project {
+                    &__image_container {
+                        bottom: 0;
+                        left: 0;
+                        top: 0;
+                    }
+
+                    &__information {
+                        border-radius: 0 15px 0 15px;
+                        padding-left: 60px;
+                    }
+                }
+            }
+
+            &:nth-child(even) {
+                justify-content: flex-start;
+
+                .cjdev__project {
+                    &__image_container {
+                        bottom: 0;
+                        right: 0;
+                        top: 0;
+                    }
+
+                    &__type {
+                        left: unset;
+                        right: 0;
+                    }
+
+                    &__information {
+                        border-radius: 15px 0 15px 0;
+                        padding-right: 60px;
+                    }
+                }
+            }
+        }
+
+        &__interest {
+            width: 22%;
+        }
+
+        &__footer {
+            padding-bottom: 10px;
+        }
+    }
+}

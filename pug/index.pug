@@ -3,6 +3,8 @@ html(lang="es")
     head
         meta(charset="utf-8")
         meta(name="viewport",content="width=device-width,user-scalable=no, initial-scale=1.0, minimum-scale=1.0")
+        meta(name="description", content="Web to show information about Jhossymar Contreras, projects, experience, skills, social networks")
+        title Jhossymar Contreras - Portfolio
         link(rel="icon",type="image/x-icon",href="/assets/favicon.ico")
         link(href="./vendor/normalize/normalize.css",rel="stylesheet")
         link(href="./vendor/fontawesome/css/all.min.css",rel="stylesheet")
@@ -13,23 +15,23 @@ html(lang="es")
             nav.cjdev__menu.cjdev__menu--main
                 ul.cjdev__menu__list
                     li.cjdev__menu__item
-                        a(href="#").cjdev__menu__link
+                        a(href="#", aria-label="Go Home").cjdev__menu__link
                             i.cjdev__menu__item__icon.fa-solid.fa-house
                             span.cjdev__menu__item__text Home
                     li.cjdev__menu__item
-                        a(href="#about").cjdev__menu__link
+                        a(href="#about", aria-label="Go to About Me section").cjdev__menu__link
                             i.cjdev__menu__item__icon.fa-solid.fa-user
                             span.cjdev__menu__item__text About Me
                     li.cjdev__menu__item
-                        a(href="#projects").cjdev__menu__link
+                        a(href="#projects", aria-label="Go to Projects section").cjdev__menu__link
                             i.cjdev__menu__item__icon.fa-solid.fa-laptop-code
                             span.cjdev__menu__item__text Projects
                     li.cjdev__menu__item
-                        a(href="#experience").cjdev__menu__link
+                        a(href="#experience", aria-label="Go to Experience section").cjdev__menu__link
                             i.cjdev__menu__item__icon.fa-solid.fa-briefcase
                             span.cjdev__menu__item__text Experience
                     li.cjdev__menu__item
-                        a(href="#skills").cjdev__menu__link
+                        a(href="#skills", aria-label="Go to Skills section").cjdev__menu__link
                             i.cjdev__menu__item__icon.fa-solid.fa-code
                             span.cjdev__menu__item__text Skills
                     //- li.cjdev__menu__item
@@ -46,16 +48,16 @@ html(lang="es")
                             h2.cjdev__header__article__position Systems Engineer & Frontend Developer
                             ul.cjdev__header__article__social
                                 li.cjdev__header__article__social__item
-                                    a(href="https://www.linkedin.com/in/jhossyd3v/").cjdev__header__article__social__link
+                                    a(href="https://www.linkedin.com/in/jhossyd3v/", aria-label="Go to Jhossymar's LinkedIn").cjdev__header__article__social__link
                                         i.devicon-linkedin-plain
                                 li.cjdev__header__article__social__item
-                                    a(href="https://github.com/jhossyd3v").cjdev__header__article__social__link
+                                    a(href="https://github.com/jhossyd3v", aria-label="Go to Jhosssymar's GitHub").cjdev__header__article__social__link
                                         i.devicon-github-original
                                 li.cjdev__header__article__social__item
-                                    a(href="https://codepen.io/jhossyd3v").cjdev__header__article__social__link
+                                    a(href="https://codepen.io/jhossyd3v", aria-label="Go to Jhossymar's Codepen").cjdev__header__article__social__link
                                         i.devicon-codepen-plain
                                 li.cjdev__header__article__social__item
-                                    a(href="https://twitter.com/jhossyd3v").cjdev__header__article__social__link
+                                    a(href="https://twitter.com/jhossyd3v", aria-label="Go to Jhossymar's Twitter").cjdev__header__article__social__link
                                         i.devicon-twitter-original
                                 //- li.cjdev__header__article__social__item
                                 //-     a(href="https://jhossy.hashnode.dev").cjdev__header__article__social__link
@@ -81,7 +83,7 @@ html(lang="es")
                     b  hire me
                     | :
                     |
-                    a(href="./assets/cv-jhossymar_contreras.pdf", target="_blank").cjdev__button.cjdev__button--cv
+                    a(href="./assets/cv-jhossymar_contreras.pdf", target="_blank", aria-label="Download Jhossymar's resume").cjdev__button.cjdev__button--cv
                         i.fa-regular.fa-file-pdf.cjdev__button__icon
                         | Download CV
                 h4.cjdev__interests__title My Interests
@@ -317,7 +319,7 @@ html(lang="es")
                     span Projects
                 section.cjdev__skills
                     article.cjdev__skill
-                        h5.cjdev__skill__title Coding Languages
+                        h4.cjdev__skill__title Coding Languages
                         ul.cjdev__skill__list.cjdev__skill__list--many
                             li.cjdev__skill__item
                                 i.devicon-javascript-plain
@@ -348,7 +350,7 @@ html(lang="es")
                             li.cjdev__skill__item
                                 span.cjdev__skill__item__text Visual Basic
                     article.cjdev__skill
-                        h5.cjdev__skill__title Databases
+                        h4.cjdev__skill__title Databases
                         ul.cjdev__skill__list.cjdev__skill__list--many
                             li.cjdev__skill__item
                                 i.devicon-mysql-plain
@@ -365,7 +367,7 @@ html(lang="es")
                                 i.devicon-mongodb-plain
                                 span.cjdev__skill__item__text Mongo DB
                     article.cjdev__skill
-                        h5.cjdev__skill__title Version Control
+                        h4.cjdev__skill__title Version Control
                         ul.cjdev__skill__list.cjdev__skill__list--many
                             li.cjdev__skill__item
                                 i.devicon-git-plain
@@ -376,7 +378,7 @@ html(lang="es")
                                 i.devicon-subversion-plain
                                 span.cjdev__skill__item__text SVN
                     article.cjdev__skill
-                        h5.cjdev__skill__title Frameworks/Libraries/Other
+                        h4.cjdev__skill__title Frameworks/Libraries/Other
                         ul.cjdev__skill__list.cjdev__skill__list--many
                             li.cjdev__skill__item
                                 i.devicon-sass-original
@@ -427,7 +429,7 @@ html(lang="es")
                             li.cjdev__skill__item
                                 span.cjdev__skill__item__text Docker
                     article.cjdev__skill
-                        h5.cjdev__skill__title Software
+                        h4.cjdev__skill__title Software
                         ul.cjdev__skill__list.cjdev__skill__list--many
                             li.cjdev__skill__item
                                 i.devicon-vscode-plain

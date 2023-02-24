@@ -65,10 +65,10 @@ async function drawProjects() {
         return `<article class="cjdev__project">
                                 <figure class="cjdev__project__image_container">
                                     <img class="cjdev__project__image" src="./assets/projects/${project.type}${project.id}_desktop001.png" alt="preview image" loading="lazy">
-                                    <h6 class="cjdev__project__type">
+                                    <h4 class="cjdev__project__type">
                                         <i class="cjdev__project__type__icon fa-solid fa-${project.type == "company"?"building":"code"}"></i>
                                         <span class="cjdev__project__type__text">${project.typeText}</span>
-                                    </h6>
+                                    </h4>
                                 </figure>
                                 <section class="cjdev__project__information">
                                     <h4 class="cjdev__project__title">${project.title}</h4>
