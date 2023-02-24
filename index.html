@@ -2,94 +2,272 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, minimun-scale=1.0">
-    <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link href="./vendor/normalize/normalize.css" rel="stylesheet">
     <link href="./vendor/fontawesome/css/all.min.css" rel="stylesheet">
-    <link href="./css/index.css?v=0.0.1" rel="stylesheet">
+    <link href="./vendor/devicon/devicon.min.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-12 col-sm-4">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-sm-12"><img class="photo" src="img/foto.png" alt="My Photo"></div>
-            <div class="col-sm-12"><img class="logo" src="img/logo.png" alt="Logo"></div>
-          </div>
-          <div class="row contact-media align-items-center justify-content-center">
-            <div class="col-sm-auto col-3"><a href="https://github.com/chrisjcom"><i class="fab fa-github"></i></a></div>
-            <div class="col-sm-auto col-3"><a href="https://www.linkedin.com/in/chrisjcom/"><i class="fab fa-linkedin"></i></a></div>
-            <div class="col-sm-auto col-3"><a href="https://twitter.com/chrisjcom"><i class="fab fa-twitter"></i></a></div>
-            <div class="col-sm-auto col-3"><a class="dev-link" href="https://dev.to/chrisjcom"><i class="fab fa-dev"></i></a></div>
-            <div class="col-sm-6 text-center col-12"><a class="outlook" href="mailto:chrisj_contreras@outlook.com"><i class="fas fa-envelope"></i></a></div>
-          </div>
-          <p class="text-center">Hi! I am from El Salvador, I am 31 years old.<br><br>I am currently working at La Prensa Gráfica as a Web Developer.<br><br>I love to listen to music, play soccer and videogames, and watch movies, series and animes</p>
-        </div>
-        <div class="col-12 col-sm-7 text-center page-section">
-          <h1 class="page-section__title"><i class="fas fa-briefcase"></i> Experience</h1>
-          <hr>
-          <article class="page-item row justify-content-between align-items-center">
-            <h2 class="page-item__title">La Prensa Gráfica<span class="page-item__period-of-time col-12"> (Dec 2020 - Currently)</span></h2>
-            <h4 class="page-item__position col-12">Web Developer</h4>
-            <p class="page-item__content">La Prensa Gráfica is one of the newspapers with large circulation in El Salvador</p>
-            <hr class="col-sm-6 offset-sm-3">
+    <main class="cjdev__main_container">
+      <nav class="cjdev__menu cjdev__menu--main">
+        <ul class="cjdev__menu__list">
+          <li class="cjdev__menu__item"><a class="cjdev__menu__link" href="#"><i class="cjdev__menu__item__icon fa-solid fa-house"></i><span class="cjdev__menu__item__text">Home</span></a></li>
+          <li class="cjdev__menu__item"><a class="cjdev__menu__link" href="#about"><i class="cjdev__menu__item__icon fa-solid fa-user"></i><span class="cjdev__menu__item__text">About Me</span></a></li>
+          <li class="cjdev__menu__item"><a class="cjdev__menu__link" href="#projects"><i class="cjdev__menu__item__icon fa-solid fa-laptop-code"></i><span class="cjdev__menu__item__text">Projects</span></a></li>
+          <li class="cjdev__menu__item"><a class="cjdev__menu__link" href="#experience"><i class="cjdev__menu__item__icon fa-solid fa-briefcase"></i><span class="cjdev__menu__item__text">Experience</span></a></li>
+          <li class="cjdev__menu__item"><a class="cjdev__menu__link" href="#skills"><i class="cjdev__menu__item__icon fa-solid fa-code"></i><span class="cjdev__menu__item__text">Skills</span></a></li>
+        </ul>
+      </nav>
+      <header class="cjdev__header" id="home">
+        <section class="cjdev__header__container">
+          <article class="cjdev__header__article">
+            <figure class="cjdev__header__article__container cjdev__header__article__container--image"><img class="cjdev__header__article__image" src="/assets/foto.png" alt=""></figure>
+            <section class="cjdev__header__article__container cjdev__header__article__container--info">
+              <h1 class="cjdev__header__article__name">Jhossymar Contreras</h1>
+              <h2 class="cjdev__header__article__position">Systems Engineer & Frontend Developer</h2>
+              <ul class="cjdev__header__article__social">
+                <li class="cjdev__header__article__social__item"><a class="cjdev__header__article__social__link" href="https://www.linkedin.com/in/jhossyd3v/"><i class="devicon-linkedin-plain"></i></a></li>
+                <li class="cjdev__header__article__social__item"><a class="cjdev__header__article__social__link" href="https://github.com/jhossyd3v"><i class="devicon-github-original"></i></a></li>
+                <li class="cjdev__header__article__social__item"><a class="cjdev__header__article__social__link" href="https://codepen.io/jhossyd3v"><i class="devicon-codepen-plain"></i></a></li>
+                <li class="cjdev__header__article__social__item"><a class="cjdev__header__article__social__link" href="https://twitter.com/jhossyd3v"><i class="devicon-twitter-original"></i></a></li>
+              </ul>
+            </section>
           </article>
-          <article class="page-item row justify-content-between align-items-center">
-            <h2 class="page-item__title">Supertex El Salvador<span class="page-item__period-of-time col-12"> (Nov 2017 - Dec 2020)</span></h2>
-            <h4 class="page-item__position col-12">PHP and Front End Developer</h4>
-            <p class="page-item__content">Supertex El Salvador is a company focused on being a leader in the manufacture of sportswear.</p>
-            <hr class="col-sm-6 offset-sm-3">
-          </article>
-          <article class="page-item row justify-content-between align-items-center">
-            <h2 class="page-item__title">Vegacorp<span class="page-item__period-of-time col-12"> (Jul 2014 - Oct 2014)</span></h2>
-            <h4 class="page-item__position col-12">Full Stack Developer</h4>
-            <p class="page-item__content">Vegacorp is a company focuses on Web Apps Developing.</p>
-            <hr class="col-sm-6 offset-sm-3">
-          </article>
-          <h1 class="page-section__title"><i class="fas fa-graduation-cap"></i> Education</h1>
-          <hr>
-          <article class="page-item row justify-content-between align-items-center">
-            <h2 class="page-item__title">Engineering in Computer Systems<span class="page-item__period-of-time col-12"> (2008 - 2020)</span></h2>
-            <h4 class="page-item__position col-12">Universidad de El Salvador</h4>
-            <p class="page-item__content">I am currently doing my work graduation.</p>
-            <hr class="col-sm-6 offset-sm-3">
-          </article>
-          <h1 class="page-section__title"><i class="fas fa-university"></i> Events</h1>
-          <hr>
-          <article class="page-item row justify-content-between align-items-center">
-            <h2 class="page-item__title">Tools for Developers<span class="page-item__period-of-time col-12"> (2015)</span></h2>
-            <h4 class="page-item__position col-12">Ignite</h4>
-            <p class="page-item__content">
-              I talked about some tools for developers to some Engineering in Computer
-              Systems students of the University of El Salvador in a presentation to new students.
-            </p>
-            <ul class="col-sm-12 page-item__list">
-              <li><a href="http://es.slideshare.net/JhossymarContreras/presentacin-curso-de-ambientacin-ing-en-sistemas-2015">Slides</a></li>
+        </section>
+      </header>
+      <section class="cjdev__section" id="about">
+        <h3 class="cjdev__section__title">About Me</h3>
+        <p>Hello! I'm Jhossymar, a<b> Systems Engineer</b>, graduated from<b> Universidad de El Salvador FMOcc</b>, and I have been working as Developer since November 2017.</p>
+        <p>I speak Spanish (native) and English (conversational).</p>
+        <p>During my years coding I have:</p>
+        <ul>
+          <li>Proposed innovative ideas to resolve issues with technology.</li>
+          <li>Designed and developed new features.</li>
+          <li>Created responsive landing pages, web apps and interactive infographics.</li>
+          <li>Researched about new technologies that could be added to the software or the development process.</li>
+          <li>Collected and analyzed data to create visualizations.</li>
+        </ul>
+        <p>If you want to<b> hire me</b>:
+          <a class="cjdev__button cjdev__button--cv" href="./assets/cv-jhossymar_contreras.pdf" target="_blank"><i class="fa-regular fa-file-pdf cjdev__button__icon"></i>Download CV</a>
+        </p>
+        <h4 class="cjdev__interests__title">My Interests</h4>
+        <ul class="cjdev__interests">
+          <li class="cjdev__interest"><i class="cjdev__interest__icon fa-solid fa-tv"></i>
+            <h5 class="cjdev__interest__title">Anime</h5><span class="cjdev__interest__text"><b>Favorites:</b> Hunter X Hunter, Haikyuu, Fairy Tail</span>
+          </li>
+          <li class="cjdev__interest"><i class="cjdev__interest__icon fa-solid fa-headphones"></i>
+            <h5 class="cjdev__interest__title">Music</h5><span class="cjdev__interest__text"><b>Favorites:</b> Juan Luis Guerra, Grupo Niche, Maroon 5</span>
+          </li>
+          <li class="cjdev__interest"><i class="cjdev__interest__icon fa-solid fa-futbol"></i>
+            <h5 class="cjdev__interest__title">Sports</h5><span class="cjdev__interest__text"><b>Favorites:</b> Soccer, Basketball, Baseball, NFL</span>
+          </li>
+          <li class="cjdev__interest"><i class="cjdev__interest__icon fa-solid fa-gamepad"></i>
+            <h5 class="cjdev__interest__title">Gaming</h5><span class="cjdev__interest__text"><b>Favorites:</b> Hearthstone, Fire Emblem, FIFA</span>
+          </li>
+          <li class="cjdev__interest"><i class="cjdev__interest__icon fa-solid fa-tv"></i>
+            <h5 class="cjdev__interest__title">Series</h5><span class="cjdev__interest__text"><b>Favorites:</b> Dr. Who, Dr. House, The Mentalist</span>
+          </li>
+          <li class="cjdev__interest"><i class="cjdev__interest__icon fa-solid fa-film"></i>
+            <h5 class="cjdev__interest__title">Cinema</h5><span class="cjdev__interest__text"><b>Favorites:</b> Your Name, Interstellar, The Intern</span>
+          </li>
+        </ul>
+      </section>
+      <section class="cjdev__section" id="projects">
+        <h3 class="cjdev__section__title">Projects</h3>
+        <section class="cjdev__projects"></section>
+      </section>
+      <section class="cjdev__section" id="experience">
+        <h3 class="cjdev__section__title">Experience</h3>
+        <section class="cjdev__experiences">
+          <article class="cjdev__experience cjdev__experience--active">
+            <h4 class="cjdev__experience__title"><i class="fa-solid fa-building cjdev__experience__icon"></i>La Prensa Gráfica</h4><span class="cjdev__experience__date_range"><i class="fa-solid fa-calendar cjdev__experience__icon"></i> (Dec 2020 - Currently)</span>
+            <h4 class="cjdev__experience__position"><i class="fa-solid fa-briefcase cjdev__experience__icon"></i>Web Developer</h4>
+            <p class="cjdev__experience__description"><i class="cjdev__experience__icon fa-solid fa-circle-info"></i>La Prensa Gráfica is one of the newspapers with large circulation in El Salvador</p>
+            <hr>
+            <ul class="cjdev__experience__information">
+              <li class="cjdev__experience__information__item">Developing responsive web apps and web interactive charts and infographics.</li>
+              <li class="cjdev__experience__information__item">Developing web apps for streaming/television sports shows.</li>
+              <li class="cjdev__experience__information__item">Proposing innovative ideas to resolve issues with technology.</li>
+              <li class="cjdev__experience__information__item">Improved UI/UX design of Séptimo Sentido's Website.</li>
+              <li class="cjdev__experience__information__item">Collecting and analyzing data to create visualizations.</li>
+              <li class="cjdev__experience__information__item">Creating landing pages for Séptimo Sentido's researches.</li>
+              <li class="cjdev__experience__information__item">Creating scripts to automate downloads of multiple files and data.</li>
             </ul>
-            <hr class="col-sm-6 offset-sm-3">
-          </article>
-          <article class="page-item row justify-content-between align-items-center">
-            <h2 class="page-item__title">Web Developing with HTML 5, CSS 3 & Javascript<span class="page-item__period-of-time col-12"> (2014)</span></h2>
-            <h4 class="page-item__position col-12">Course</h4>
-            <p class="page-item__content">
-              I gave this course to students of a subject called "Fundamentos de Programacion en Internet"
-              in the University of El Salvador.
-            </p>
-            <ul class="col-sm-12 page-item__list">
-              <li><a href="https://github.com/chrisjcom/tallerfpi">Repositorio de Github</a></li>
+            <hr>
+            <div class="cjdev__switch">
+              <label class="cjdev__switch__checkbox_label" for="cjdev__switch__checkbox__lpg">
+                <input class="cjdev__switch__checkbox" type="checkbox" data-company="lpg" name="cjdev__switch__checkbox__lpg" id="cjdev__switch__checkbox__lpg"><span class="cjdev__switch__slider"></span>
+              </label>
+            </div>
+            <ul class="cjdev__techs cjdev__techs--lpg">
+              <li class="cjdev__tech__item"><i class="devicon-javascript-plain"></i><span class="cjdev__tech__item__text">Javascript</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-css3-plain"></i><span class="cjdev__tech__item__text">CSS 3</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-html5-plain"></i><span class="cjdev__tech__item__text">HTML 5</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-sass-plain"></i><span class="cjdev__tech__item__text">SASS</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-git-plain"></i><span class="cjdev__tech__item__text">Git</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-photoshop-plain"></i><span class="cjdev__skill__item__text">Photoshop</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-jupyter-plain-wordmark"></i><span class="cjdev__tech__item__text">Jupyter</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-pandas-plain"></i><span class="cjdev__tech__item__text">Pandas</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-illustrator-plain"></i><span class="cjdev__skill__item__text">Illustrator</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-php-plain"></i><span class="cjdev__tech__item__text">PHP</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-wordpress-plain"></i><span class="cjdev__tech__item__text">Wordpress</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-bootstrap-plain"></i><span class="cjdev__tech__item__text">Bootstrap</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-figma-plain"></i><span class="cjdev__tech__item__text">Figma</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-filezilla-plain"></i><span class="cjdev__tech__item__text">Filezilla</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-gimp-plain"></i><span class="cjdev__tech__item__text">Gimp</span></li>
+              <li class="cjdev__tech__item"><span class="cjdev__tech__item__text">Google Sheet</span></li>
+              <li class="cjdev__tech__item"><span class="cjdev__tech__item__text">Responsively App</span></li>
+              <li class="cjdev__tech__item"><span class="cjdev__tech__item__text">Prepros</span></li>
+              <li class="cjdev__tech__item"><span class="cjdev__tech__item__text">Leaflet js</span></li>
+              <li class="cjdev__tech__item"><span class="cjdev__tech__item__text">Font Awesome</span></li>
+              <li class="cjdev__tech__item"><span class="cjdev__tech__item__text">Splide js</span></li>
+              <li class="cjdev__tech__item"><span class="cjdev__tech__item__text">Select2 js</span></li>
+              <li class="cjdev__tech__item"><span class="cjdev__tech__item__text">PDF js</span></li>
+              <li class="cjdev__tech__item"><span class="cjdev__tech__item__text">Animate.css</span></li>
+              <li class="cjdev__tech__item"><span class="cjdev__tech__item__text">Magic.css</span></li>
             </ul>
-            <hr class="col-sm-6 offset-sm-3">
           </article>
-          <article class="page-item row justify-content-between align-items-center">
-            <h2 class="page-item__title">HTML 5 & CSS 3<span class="page-item__period-of-time col-12"> (2014)</span></h2>
-            <h4 class="page-item__position col-12">Workshop</h4>
-            <p class="page-item__content">I gave this workshop to students of University of El Salvador for the Community Minerva.NET.</p>
-            <ul class="col-sm-12 page-item__list">
-              <li><a href="https://github.com/chrisjcom/Taller-Minerva-Desarrollo-Web-Live">Repositorio de Github</a></li>
+          <article class="cjdev__experience">
+            <h4 class="cjdev__experience__title"><i class="fa-solid fa-building cjdev__experience__icon"></i>Supertex El Salvador</h4><span class="cjdev__experience__date_range"><i class="fa-solid fa-calendar cjdev__experience__icon"></i> (Nov 2017 - Dec 2020)</span>
+            <h4 class="cjdev__experience__position"><i class="fa-solid fa-briefcase cjdev__experience__icon"></i>PHP and Front End Developer</h4>
+            <p class="cjdev__experience__description"><i class="cjdev__experience__icon fa-solid fa-circle-info"></i>Supertex El Salvador is a company focused on being a leader in the manufacture of sportswear.</p>
+            <hr>
+            <ul class="cjdev__experience__information">
+              <li class="cjdev__experience__information__item">Designed and developed new features of the manufacturing software in the company.</li>
+              <li class="cjdev__experience__information__item">Modified code to fix errors.</li>
+              <li class="cjdev__experience__information__item">Researched about new technologies that could be added to the software or the development process.</li>
             </ul>
-            <hr class="col-sm-6 offset-sm-3">
+            <hr>
+            <div class="cjdev__switch">
+              <label class="cjdev__switch__checkbox_label" for="cjdev__switch__checkbox__supertex">
+                <input class="cjdev__switch__checkbox" type="checkbox" data-company="supertex" name="cjdev__switch__checkbox__supertex" id="cjdev__switch__checkbox__supertex"><span class="cjdev__switch__slider"></span>
+              </label>
+            </div>
+            <ul class="cjdev__techs cjdev__techs--supertex">
+              <li class="cjdev__tech__item"><i class="devicon-javascript-plain"></i><span class="cjdev__tech__item__text">Javascript</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-css3-plain"></i><span class="cjdev__tech__item__text">CSS 3</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-html5-plain"></i><span class="cjdev__tech__item__text">HTML 5</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-php-plain"></i><span class="cjdev__tech__item__text">PHP</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-jquery-plain"></i><span class="cjdev__tech__item__text">jQuery</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-mysql-plain"></i><span class="cjdev__tech__item__text">MySQL</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-postgresql-plain"></i><span class="cjdev__tech__item__text">PostgreSQL</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-subversion-plain"></i><span class="cjdev__tech__item__text">SVN</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-git-plain"></i><span class="cjdev__tech__item__text">Git</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-react-plain"></i><span class="cjdev__tech__item__text">React</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-vscode-plain"></i><span class="cjdev__tech__item__text">VS Code</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-vscode-plain"></i><span class="cjdev__tech__item__text">Putty</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-debian-plain"></i><span class="cjdev__tech__item__text">Debian</span></li>
+              <li class="cjdev__tech__item"><i class="devicon-bootstrap-plain"></i><span class="cjdev__tech__item__text">Bootstrap</span></li>
+              <li class="cjdev__tech__item"><span class="cjdev__tech__item__text">Font Awesome</span></li>
+              <li class="cjdev__tech__item"><span class="cjdev__tech__item__text">Form Validation</span></li>
+              <li class="cjdev__tech__item"><span class="cjdev__tech__item__text">FPDF</span></li>
+              <li class="cjdev__tech__item"><span class="cjdev__tech__item__text">XAMPP</span></li>
+            </ul>
           </article>
-        </div>
-      </div>
-    </div>
+        </section>
+      </section>
+      <section class="cjdev__section" id="skills">
+        <h3 class="cjdev__section__title">Skills</h3>
+        <section class="cjdev__levels"><span>In</span><span class="cjdev__level cjdev__level--many" title="More than 10 projects">Many</span><span>|</span><span class="cjdev__level cjdev__level--some" title="More than 5 projects">Some</span><span>|</span><span class="cjdev__level cjdev__level--few" title="At least 1 project">Few</span><span>Projects</span></section>
+        <section class="cjdev__skills">
+          <article class="cjdev__skill">
+            <h5 class="cjdev__skill__title">Coding Languages</h5>
+            <ul class="cjdev__skill__list cjdev__skill__list--many">
+              <li class="cjdev__skill__item"><i class="devicon-javascript-plain"></i><span class="cjdev__skill__item__text">Javascript</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-css3-plain"></i><span class="cjdev__skill__item__text">CSS3</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-html5-plain"></i><span class="cjdev__skill__item__text">HTML5</span></li>
+            </ul>
+            <ul class="cjdev__skill__list cjdev__skill__list--some">
+              <li class="cjdev__skill__item"><i class="devicon-php-plain"></i><span class="cjdev__skill__item__text">PHP</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-python-plain"></i><span class="cjdev__skill__item__text">Python</span></li>
+            </ul>
+            <ul class="cjdev__skill__list cjdev__skill__list--few">
+              <li class="cjdev__skill__item"><i class="devicon-csharp-plain"></i><span class="cjdev__skill__item__text">C#</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-java-plain"></i><span class="cjdev__skill__item__text">Java</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-bash-plain"></i><span class="cjdev__skill__item__text">Bash</span></li>
+              <li class="cjdev__skill__item"><span class="cjdev__skill__item__text">Visual Basic</span></li>
+            </ul>
+          </article>
+          <article class="cjdev__skill">
+            <h5 class="cjdev__skill__title">Databases</h5>
+            <ul class="cjdev__skill__list cjdev__skill__list--many">
+              <li class="cjdev__skill__item"><i class="devicon-mysql-plain"></i><span class="cjdev__skill__item__text">MySQL</span></li>
+            </ul>
+            <ul class="cjdev__skill__list cjdev__skill__list--some">
+              <li class="cjdev__skill__item"><i class="devicon-postgresql-plain"></i><span class="cjdev__skill__item__text">PostgreSQL</span></li>
+            </ul>
+            <ul class="cjdev__skill__list cjdev__skill__list--few">
+              <li class="cjdev__skill__item"><i class="devicon-sqlite-plain"></i><span class="cjdev__skill__item__text">SQLite</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-mongodb-plain"></i><span class="cjdev__skill__item__text">Mongo DB</span></li>
+            </ul>
+          </article>
+          <article class="cjdev__skill">
+            <h5 class="cjdev__skill__title">Version Control</h5>
+            <ul class="cjdev__skill__list cjdev__skill__list--many">
+              <li class="cjdev__skill__item"><i class="devicon-git-plain"></i><span class="cjdev__skill__item__text">Git</span></li>
+            </ul>
+            <ul class="cjdev__skill__list cjdev__skill__list--few">
+              <li class="cjdev__skill__item"><i class="devicon-subversion-plain"></i><span class="cjdev__skill__item__text">SVN</span></li>
+            </ul>
+          </article>
+          <article class="cjdev__skill">
+            <h5 class="cjdev__skill__title">Frameworks/Libraries/Other</h5>
+            <ul class="cjdev__skill__list cjdev__skill__list--many">
+              <li class="cjdev__skill__item"><i class="devicon-sass-original"></i><span class="cjdev__skill__item__text">SASS</span></li>
+            </ul>
+            <ul class="cjdev__skill__list cjdev__skill__list--some">
+              <li class="cjdev__skill__item"><i class="devicon-jquery-plain"></i><span class="cjdev__skill__item__text">jQuery</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-bootstrap-plain"></i><span class="cjdev__skill__item__text">Bootstrap</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-wordpress-plain"></i><span class="cjdev__skill__item__text">Wordpress</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-pandas-plain"></i><span class="cjdev__skill__item__text">Pandas</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-jupyter-plain-wordmark"></i><span class="cjdev__skill__item__text">Jupyter</span></li>
+            </ul>
+            <ul class="cjdev__skill__list cjdev__skill__list--few">
+              <li class="cjdev__skill__item"><i class="devicon-nodejs-plain"></i><span class="cjdev__skill__item__text">Node JS</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-react-plain"></i><span class="cjdev__skill__item__text">React</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-angularjs-plain"></i><span class="cjdev__skill__item__text">Angular JS</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-grunt-plain"></i><span class="cjdev__skill__item__text">Grunt</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-bower-plain"></i><span class="cjdev__skill__item__text">Bower</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-gulp-plain"></i><span class="cjdev__skill__item__text">Gulp</span></li>
+              <li class="cjdev__skill__item"><span class="cjdev__skill__item__text">Pug</span></li>
+              <li class="cjdev__skill__item"><span class="cjdev__skill__item__text">Stylus</span></li>
+              <li class="cjdev__skill__item"><span class="cjdev__skill__item__text">Primefaces</span></li>
+              <li class="cjdev__skill__item"><span class="cjdev__skill__item__text">Jakarta EE</span></li>
+              <li class="cjdev__skill__item"><span class="cjdev__skill__item__text">Docker</span></li>
+            </ul>
+          </article>
+          <article class="cjdev__skill">
+            <h5 class="cjdev__skill__title">Software</h5>
+            <ul class="cjdev__skill__list cjdev__skill__list--many">
+              <li class="cjdev__skill__item"><i class="devicon-vscode-plain"></i><span class="cjdev__skill__item__text">VS Code</span></li>
+              <li class="cjdev__skill__item"><span class="cjdev__skill__item__text">Responsively App</span></li>
+              <li class="cjdev__skill__item"><span class="cjdev__skill__item__text">Prepros</span></li>
+            </ul>
+            <ul class="cjdev__skill__list cjdev__skill__list--some">
+              <li class="cjdev__skill__item"><span class="cjdev__skill__item__text">Google Sheet</span></li>
+            </ul>
+            <ul class="cjdev__skill__list cjdev__skill__list--few">
+              <li class="cjdev__skill__item"><i class="devicon-photoshop-plain"></i><span class="cjdev__skill__item__text">Photoshop</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-illustrator-plain"></i><span class="cjdev__skill__item__text">Illustrator</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-putty-plain"></i><span class="cjdev__skill__item__text">Putty</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-debian-plain"></i><span class="cjdev__skill__item__text">Debian</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-linux-plain"></i><span class="cjdev__skill__item__text">Linux</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-figma-plain"></i><span class="cjdev__skill__item__text">Figma</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-gimp-plain"></i><span class="cjdev__skill__item__text">Gimp</span></li>
+              <li class="cjdev__skill__item"><i class="devicon-filezilla-plain"></i><span class="cjdev__skill__item__text">Filezilla</span></li>
+              <li class="cjdev__skill__item"><span class="cjdev__skill__item__text">XAMPP</span></li>
+              <li class="cjdev__skill__item"><span class="cjdev__skill__item__text">Glassfish</span></li>
+            </ul>
+          </article>
+        </section>
+      </section>
+      <footer class="cjdev__footer">
+        <p>Languages & Libraries: Pug, SASS, Javascript, Font Awesome, Devicon.</p>
+        <p>Software: Prepros, Responsively App.</p>
+      </footer>
+      <script src="./js/index.js"></script>
+    </main>
   </body>
 </html>

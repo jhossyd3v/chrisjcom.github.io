@@ -1,0 +1,11 @@
+@media (min-width: 600px) {
+    .cjdev {
+        &__section {
+            padding: 20px 5%;
+        }
+
+        &__interest {
+            width: 30%;
+        }
+    }
+}

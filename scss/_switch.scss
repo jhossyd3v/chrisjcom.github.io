@@ -1,0 +1,79 @@
+@use "colors";
+
+.cjdev {
+    &__switch {
+        box-sizing: border-box;
+        padding: 10px;
+        width: 100%;
+
+        &__checkbox {
+            height: 0;
+            opacity: 0;
+            width: 0;
+
+            &_label {
+                display: inline-block;
+                height: 34px;
+                position: relative;
+                width: 60px;
+            }
+
+            &:checked + .cjdev__switch__slider {
+                background-color: colors.$orangev2;
+
+                &::before {
+                    transform: translateX(26px);
+                }
+            }
+
+            &:focus + .cjdev__switch__slider {
+                box-shadow: 0 0 1px colors.$orangev2;
+            }
+        }
+
+        &__slider {
+            background-color: colors.$whitev2;
+            border-radius: 34px;
+            bottom: 0;
+            cursor: pointer;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: .4s;
+
+            &::before {
+                background-color: colors.$blackv1;
+                border-radius: 50%;
+                bottom: 4px;
+                content: "";
+                height: 26px;
+                left: 4px;
+                position: absolute;
+                transition: .4s;
+                width: 26px;
+            }
+
+            &::after {
+                bottom: 0;
+                content: "Show/Hide used technologies";
+                height: fit-content;
+                left: 105%;
+                margin: auto;
+                position: absolute;
+                top: 0;
+                width: 250px;
+            }
+        }
+    }
+
+    &__experience--active {
+        .cjdev__switch__slider {
+            background-color: colors.$blackv1;
+
+            &::before {
+                background-color: colors.$whitev2;
+            }
+        }
+    }
+}

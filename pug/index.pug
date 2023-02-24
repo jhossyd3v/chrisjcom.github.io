@@ -2,136 +2,473 @@ doctype html
 html(lang="es")
     head
         meta(charset="utf-8")
-        meta(name="viewport",content="width=device-width,user-scalable=no, initial-scale=1.0, minimun-scale=1.0")
-        //- link(href="./vendor/Normalize/normalize.css",rel="stylesheet")
-        link(href="./vendor/bootstrap/css/bootstrap.min.css",rel="stylesheet")
+        meta(name="viewport",content="width=device-width,user-scalable=no, initial-scale=1.0, minimum-scale=1.0")
+        link(rel="icon",type="image/x-icon",href="/assets/favicon.ico")
+        link(href="./vendor/normalize/normalize.css",rel="stylesheet")
         link(href="./vendor/fontawesome/css/all.min.css",rel="stylesheet")
-        //- link(href="https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,300italic,400italic,500italic,700italic",rel="stylesheet")
-        link(href="./css/index.css?v=0.0.1",rel="stylesheet")
+        link(href="./vendor/devicon/devicon.min.css",rel="stylesheet")
+        link(href="./css/index.css",rel="stylesheet")
     body
-        .container
-            .row.justify-content-between
-                .col-12.col-sm-4
-                    .row.align-items-center.justify-content-center
-                        .col-sm-12
-                            img(src="img/foto.png", alt="My Photo").photo
-                        .col-sm-12
-                            img(src="img/logo.png", alt="Logo").logo
-                    .row.contact-media.align-items-center.justify-content-center
-                        .col-sm-auto.col-3
-                            a(href="https://github.com/chrisjcom")
-                                i.fab.fa-github
-                        .col-sm-auto.col-3
-                            a(href="https://www.linkedin.com/in/chrisjcom/")
-                                i.fab.fa-linkedin
-                        .col-sm-auto.col-3
-                            a(href="https://twitter.com/chrisjcom")
-                                i.fab.fa-twitter
-                        .col-sm-auto.col-3
-                            a(href="https://dev.to/chrisjcom").dev-link
-                                i.fab.fa-dev
-                        .col-sm-6.text-center.col-12
-                            a(href="mailto:chrisj_contreras@outlook.com").outlook
-                                i.fas.fa-envelope
-                    p.text-center
-                        | Hi! I am from El Salvador, I am 31 years old.
-                        br
-                        br
-                        | I am currently working at La Prensa Gráfica as a Web Developer.
-                        br
-                        br
-                        | I love to listen to music, play soccer and videogames, and watch movies, series and animes
-                .col-12.col-sm-7.text-center.page-section
-                    h1.page-section__title
-                        i.fas.fa-briefcase
-                        |  Experience
-                    hr
-                    article.page-item.row.justify-content-between.align-items-center
-                        h2.page-item__title
+        main.cjdev__main_container
+            nav.cjdev__menu.cjdev__menu--main
+                ul.cjdev__menu__list
+                    li.cjdev__menu__item
+                        a(href="#").cjdev__menu__link
+                            i.cjdev__menu__item__icon.fa-solid.fa-house
+                            span.cjdev__menu__item__text Home
+                    li.cjdev__menu__item
+                        a(href="#about").cjdev__menu__link
+                            i.cjdev__menu__item__icon.fa-solid.fa-user
+                            span.cjdev__menu__item__text About Me
+                    li.cjdev__menu__item
+                        a(href="#projects").cjdev__menu__link
+                            i.cjdev__menu__item__icon.fa-solid.fa-laptop-code
+                            span.cjdev__menu__item__text Projects
+                    li.cjdev__menu__item
+                        a(href="#experience").cjdev__menu__link
+                            i.cjdev__menu__item__icon.fa-solid.fa-briefcase
+                            span.cjdev__menu__item__text Experience
+                    li.cjdev__menu__item
+                        a(href="#skills").cjdev__menu__link
+                            i.cjdev__menu__item__icon.fa-solid.fa-code
+                            span.cjdev__menu__item__text Skills
+                    //- li.cjdev__menu__item
+                    //-     a(href="#blog").cjdev__menu__link
+                    //-         i.cjdev__menu__item__icon.fa-solid.fa-pen
+                    //-         span.cjdev__menu__item__text Blog
+            header.cjdev__header#home
+                section.cjdev__header__container
+                    article.cjdev__header__article
+                        figure.cjdev__header__article__container.cjdev__header__article__container--image
+                            img(src="/assets/foto.png", alt="").cjdev__header__article__image
+                        section.cjdev__header__article__container.cjdev__header__article__container--info
+                            h1.cjdev__header__article__name Jhossymar Contreras
+                            h2.cjdev__header__article__position Systems Engineer & Frontend Developer
+                            ul.cjdev__header__article__social
+                                li.cjdev__header__article__social__item
+                                    a(href="https://www.linkedin.com/in/jhossyd3v/").cjdev__header__article__social__link
+                                        i.devicon-linkedin-plain
+                                li.cjdev__header__article__social__item
+                                    a(href="https://github.com/jhossyd3v").cjdev__header__article__social__link
+                                        i.devicon-github-original
+                                li.cjdev__header__article__social__item
+                                    a(href="https://codepen.io/jhossyd3v").cjdev__header__article__social__link
+                                        i.devicon-codepen-plain
+                                li.cjdev__header__article__social__item
+                                    a(href="https://twitter.com/jhossyd3v").cjdev__header__article__social__link
+                                        i.devicon-twitter-original
+                                //- li.cjdev__header__article__social__item
+                                //-     a(href="https://jhossy.hashnode.dev").cjdev__header__article__social__link
+                                //-         i.fa-brands.fa-hashnode
+            section.cjdev__section#about
+                h3.cjdev__section__title About Me
+                p
+                    | Hello! I'm Jhossymar, a
+                    b  Systems Engineer
+                    | , graduated from
+                    b  Universidad de El Salvador FMOcc
+                    | , and I have been working as Developer since November 2017.
+                p I speak Spanish (native) and English (conversational).
+                p During my years coding I have:
+                ul
+                    li Proposed innovative ideas to resolve issues with technology.
+                    li Designed and developed new features.
+                    li Created responsive landing pages, web apps and interactive infographics.
+                    li Researched about new technologies that could be added to the software or the development process.
+                    li Collected and analyzed data to create visualizations.
+                p
+                    | If you want to
+                    b  hire me
+                    | :
+                    |
+                    a(href="./assets/cv-jhossymar_contreras.pdf", target="_blank").cjdev__button.cjdev__button--cv
+                        i.fa-regular.fa-file-pdf.cjdev__button__icon
+                        | Download CV
+                h4.cjdev__interests__title My Interests
+                ul.cjdev__interests
+                    li.cjdev__interest
+                        i.cjdev__interest__icon.fa-solid.fa-tv
+                        h5.cjdev__interest__title Anime
+                        span.cjdev__interest__text
+                            b Favorites:
+                            |  Hunter X Hunter, Haikyuu, Fairy Tail
+                    li.cjdev__interest
+                        i.cjdev__interest__icon.fa-solid.fa-headphones
+                        h5.cjdev__interest__title Music
+                        span.cjdev__interest__text
+                            b Favorites:
+                            |  Juan Luis Guerra, Grupo Niche, Maroon 5
+                    li.cjdev__interest
+                        i.cjdev__interest__icon.fa-solid.fa-futbol
+                        h5.cjdev__interest__title Sports
+                        span.cjdev__interest__text
+                            b Favorites:
+                            |  Soccer, Basketball, Baseball, NFL
+                    li.cjdev__interest
+                        i.cjdev__interest__icon.fa-solid.fa-gamepad
+                        h5.cjdev__interest__title Gaming
+                        span.cjdev__interest__text
+                            b Favorites:
+                            |  Hearthstone, Fire Emblem, FIFA
+                    li.cjdev__interest
+                        i.cjdev__interest__icon.fa-solid.fa-tv
+                        h5.cjdev__interest__title Series
+                        span.cjdev__interest__text
+                            b Favorites:
+                            |  Dr. Who, Dr. House, The Mentalist
+                    li.cjdev__interest
+                        i.cjdev__interest__icon.fa-solid.fa-film
+                        h5.cjdev__interest__title Cinema
+                        span.cjdev__interest__text
+                            b Favorites:
+                            |  Your Name, Interstellar, The Intern
+            section.cjdev__section#projects
+                h3.cjdev__section__title Projects
+                section.cjdev__projects
+            section.cjdev__section#experience
+                h3.cjdev__section__title Experience
+                section.cjdev__experiences
+                    article.cjdev__experience.cjdev__experience--active
+                        h4.cjdev__experience__title
+                            i.fa-solid.fa-building.cjdev__experience__icon
                             | La Prensa Gráfica
-                            span.page-item__period-of-time.col-12
-                                |  (Dec 2020 - Currently)
-                        h4.page-item__position.col-12
+                        span.cjdev__experience__date_range
+                            i.fa-solid.fa-calendar.cjdev__experience__icon
+                            |  (Dec 2020 - Currently)
+                        h4.cjdev__experience__position
+                            i.fa-solid.fa-briefcase.cjdev__experience__icon
                             | Web Developer
-                        p.page-item__content
+                        p.cjdev__experience__description
+                            i.cjdev__experience__icon.fa-solid.fa-circle-info
                             | La Prensa Gráfica is one of the newspapers with large circulation in El Salvador
-                        hr.col-sm-6.offset-sm-3
-                    article.page-item.row.justify-content-between.align-items-center
-                        h2.page-item__title
+                        hr
+                        ul.cjdev__experience__information
+                            li.cjdev__experience__information__item
+                                | Developing responsive web apps and web interactive charts and infographics.
+                            li.cjdev__experience__information__item
+                                | Developing web apps for streaming/television sports shows.
+                            li.cjdev__experience__information__item
+                                | Proposing innovative ideas to resolve issues with technology.
+                            li.cjdev__experience__information__item
+                                | Improved UI/UX design of Séptimo Sentido's Website.
+                            li.cjdev__experience__information__item
+                                | Collecting and analyzing data to create visualizations.
+                            li.cjdev__experience__information__item
+                                | Creating landing pages for Séptimo Sentido's researches.
+                            li.cjdev__experience__information__item
+                                | Creating scripts to automate downloads of multiple files and data.
+                        hr
+                        div.cjdev__switch
+                            label(for="cjdev__switch__checkbox__lpg").cjdev__switch__checkbox_label
+                                input(type="checkbox",data-company="lpg",name="cjdev__switch__checkbox__lpg",id="cjdev__switch__checkbox__lpg").cjdev__switch__checkbox
+                                span.cjdev__switch__slider
+                        ul.cjdev__techs.cjdev__techs--lpg
+                            li.cjdev__tech__item
+                                i.devicon-javascript-plain
+                                span.cjdev__tech__item__text Javascript
+                            li.cjdev__tech__item
+                                i.devicon-css3-plain
+                                span.cjdev__tech__item__text CSS 3
+                            li.cjdev__tech__item
+                                i.devicon-html5-plain
+                                span.cjdev__tech__item__text HTML 5
+                            li.cjdev__tech__item
+                                i.devicon-sass-plain
+                                span.cjdev__tech__item__text SASS
+                            li.cjdev__tech__item
+                                i.devicon-git-plain
+                                span.cjdev__tech__item__text Git
+                            li.cjdev__skill__item
+                                i.devicon-photoshop-plain
+                                span.cjdev__skill__item__text Photoshop
+                            li.cjdev__tech__item
+                                i.devicon-jupyter-plain-wordmark
+                                span.cjdev__tech__item__text Jupyter
+                            li.cjdev__tech__item
+                                i.devicon-pandas-plain
+                                span.cjdev__tech__item__text Pandas
+                            li.cjdev__skill__item
+                                i.devicon-illustrator-plain
+                                span.cjdev__skill__item__text Illustrator
+                            li.cjdev__tech__item
+                                i.devicon-php-plain
+                                span.cjdev__tech__item__text PHP
+                            li.cjdev__tech__item
+                                i.devicon-wordpress-plain
+                                span.cjdev__tech__item__text Wordpress
+                            li.cjdev__tech__item
+                                i.devicon-bootstrap-plain
+                                span.cjdev__tech__item__text Bootstrap
+                            li.cjdev__tech__item
+                                i.devicon-figma-plain
+                                span.cjdev__tech__item__text Figma
+                            li.cjdev__tech__item
+                                i.devicon-filezilla-plain
+                                span.cjdev__tech__item__text Filezilla
+                            li.cjdev__tech__item
+                                i.devicon-gimp-plain
+                                span.cjdev__tech__item__text Gimp
+                            li.cjdev__tech__item
+                                span.cjdev__tech__item__text Google Sheet
+                            li.cjdev__tech__item
+                                span.cjdev__tech__item__text Responsively App
+                            li.cjdev__tech__item
+                                span.cjdev__tech__item__text Prepros
+                            li.cjdev__tech__item
+                                span.cjdev__tech__item__text Leaflet js
+                            li.cjdev__tech__item
+                                span.cjdev__tech__item__text Font Awesome
+                            li.cjdev__tech__item
+                                span.cjdev__tech__item__text Splide js
+                            li.cjdev__tech__item
+                                span.cjdev__tech__item__text Select2 js
+                            li.cjdev__tech__item
+                                span.cjdev__tech__item__text PDF js
+                            li.cjdev__tech__item
+                                span.cjdev__tech__item__text Animate.css
+                            li.cjdev__tech__item
+                                span.cjdev__tech__item__text Magic.css
+                    article.cjdev__experience
+                        h4.cjdev__experience__title
+                            i.fa-solid.fa-building.cjdev__experience__icon
                             | Supertex El Salvador
-                            span.page-item__period-of-time.col-12
-                                |  (Nov 2017 - Dec 2020)
-                        h4.page-item__position.col-12
+                        span.cjdev__experience__date_range
+                            i.fa-solid.fa-calendar.cjdev__experience__icon
+                            |  (Nov 2017 - Dec 2020)
+                        h4.cjdev__experience__position
+                            i.fa-solid.fa-briefcase.cjdev__experience__icon
                             | PHP and Front End Developer
-                        p.page-item__content
+                        p.cjdev__experience__description
+                            i.cjdev__experience__icon.fa-solid.fa-circle-info
                             | Supertex El Salvador is a company focused on being a leader in the manufacture of sportswear.
-                        hr.col-sm-6.offset-sm-3
-                    article.page-item.row.justify-content-between.align-items-center
-                        h2.page-item__title
-                            | Vegacorp
-                            span.page-item__period-of-time.col-12
-                                |  (Jul 2014 - Oct 2014)
-                        h4.page-item__position.col-12
-                            | Full Stack Developer
-                        p.page-item__content
-                            | Vegacorp is a company focuses on Web Apps Developing.
-                        hr.col-sm-6.offset-sm-3
-                    h1.page-section__title
-                        i.fas.fa-graduation-cap
-                        |  Education
-                    hr
-                    article.page-item.row.justify-content-between.align-items-center
-                        h2.page-item__title
-                            | Engineering in Computer Systems
-                            span.page-item__period-of-time.col-12
-                                |  (2008 - 2020)
-                        h4.page-item__position.col-12
-                            | Universidad de El Salvador
-                        p.page-item__content
-                            | I am currently doing my work graduation.
-                        hr.col-sm-6.offset-sm-3
-                    h1.page-section__title
-                        i.fas.fa-university
-                        |  Events
-                    hr
-                    article.page-item.row.justify-content-between.align-items-center
-                        h2.page-item__title
-                            | Tools for Developers
-                            span.page-item__period-of-time.col-12
-                                |  (2015)
-                        h4.page-item__position.col-12
-                            | Ignite
-                        p.page-item__content
-                            | I talked about some tools for developers to some Engineering in Computer
-                            | Systems students of the University of El Salvador in a presentation to new students.
-                        ul.col-sm-12.page-item__list
-                            li
-                                a(href="http://es.slideshare.net/JhossymarContreras/presentacin-curso-de-ambientacin-ing-en-sistemas-2015") Slides
-                        hr.col-sm-6.offset-sm-3
-                    article.page-item.row.justify-content-between.align-items-center
-                        h2.page-item__title
-                            | Web Developing with HTML 5, CSS 3 & Javascript
-                            span.page-item__period-of-time.col-12
-                                |  (2014)
-                        h4.page-item__position.col-12
-                            | Course
-                        p.page-item__content
-                            | I gave this course to students of a subject called "Fundamentos de Programacion en Internet"
-                            | in the University of El Salvador.
-                        ul.col-sm-12.page-item__list
-                            li
-                                a(href="https://github.com/chrisjcom/tallerfpi") Repositorio de Github
-                        hr.col-sm-6.offset-sm-3
-                    article.page-item.row.justify-content-between.align-items-center
-                        h2.page-item__title
-                            | HTML 5 & CSS 3
-                            span.page-item__period-of-time.col-12
-                                |  (2014)
-                        h4.page-item__position.col-12
-                            | Workshop
-                        p.page-item__content
-                            | I gave this workshop to students of University of El Salvador for the Community Minerva.NET.
-                        ul.col-sm-12.page-item__list
-                            li
-                                a(href="https://github.com/chrisjcom/Taller-Minerva-Desarrollo-Web-Live") Repositorio de Github
-                        hr.col-sm-6.offset-sm-3
+                        hr
+                        ul.cjdev__experience__information
+                            li.cjdev__experience__information__item
+                                | Designed and developed new features of the manufacturing software in the company.
+                            li.cjdev__experience__information__item
+                                | Modified code to fix errors.
+                            li.cjdev__experience__information__item
+                                | Researched about new technologies that could be added to the software or the development process.
+                        hr
+                        div.cjdev__switch
+                            label(for="cjdev__switch__checkbox__supertex").cjdev__switch__checkbox_label
+                                input(type="checkbox",data-company="supertex",name="cjdev__switch__checkbox__supertex",id="cjdev__switch__checkbox__supertex").cjdev__switch__checkbox
+                                span.cjdev__switch__slider
+                        ul.cjdev__techs.cjdev__techs--supertex
+                            li.cjdev__tech__item
+                                i.devicon-javascript-plain
+                                span.cjdev__tech__item__text Javascript
+                            li.cjdev__tech__item
+                                i.devicon-css3-plain
+                                span.cjdev__tech__item__text CSS 3
+                            li.cjdev__tech__item
+                                i.devicon-html5-plain
+                                span.cjdev__tech__item__text HTML 5
+                            li.cjdev__tech__item
+                                i.devicon-php-plain
+                                span.cjdev__tech__item__text PHP
+                            li.cjdev__tech__item
+                                i.devicon-jquery-plain
+                                span.cjdev__tech__item__text jQuery
+                            li.cjdev__tech__item
+                                i.devicon-mysql-plain
+                                span.cjdev__tech__item__text MySQL
+                            li.cjdev__tech__item
+                                i.devicon-postgresql-plain
+                                span.cjdev__tech__item__text PostgreSQL
+                            li.cjdev__tech__item
+                                i.devicon-subversion-plain
+                                span.cjdev__tech__item__text SVN
+                            li.cjdev__tech__item
+                                i.devicon-git-plain
+                                span.cjdev__tech__item__text Git
+                            li.cjdev__tech__item
+                                i.devicon-react-plain
+                                span.cjdev__tech__item__text React
+                            li.cjdev__tech__item
+                                i.devicon-vscode-plain
+                                span.cjdev__tech__item__text VS Code
+                            li.cjdev__tech__item
+                                i.devicon-vscode-plain
+                                span.cjdev__tech__item__text Putty
+                            li.cjdev__tech__item
+                                i.devicon-debian-plain
+                                span.cjdev__tech__item__text Debian
+                            li.cjdev__tech__item
+                                i.devicon-bootstrap-plain
+                                span.cjdev__tech__item__text Bootstrap
+                            li.cjdev__tech__item
+                                span.cjdev__tech__item__text Font Awesome
+                            li.cjdev__tech__item
+                                span.cjdev__tech__item__text Form Validation
+                            li.cjdev__tech__item
+                                span.cjdev__tech__item__text FPDF
+                            li.cjdev__tech__item
+                                span.cjdev__tech__item__text XAMPP
+            section.cjdev__section#skills
+                h3.cjdev__section__title Skills
+                section.cjdev__levels
+                    span In
+                    span(title="More than 10 projects").cjdev__level.cjdev__level--many Many
+                    span |
+                    span(title="More than 5 projects").cjdev__level.cjdev__level--some Some
+                    span |
+                    span(title="At least 1 project").cjdev__level.cjdev__level--few Few
+                    span Projects
+                section.cjdev__skills
+                    article.cjdev__skill
+                        h5.cjdev__skill__title Coding Languages
+                        ul.cjdev__skill__list.cjdev__skill__list--many
+                            li.cjdev__skill__item
+                                i.devicon-javascript-plain
+                                span.cjdev__skill__item__text Javascript
+                            li.cjdev__skill__item
+                                i.devicon-css3-plain
+                                span.cjdev__skill__item__text CSS3
+                            li.cjdev__skill__item
+                                i.devicon-html5-plain
+                                span.cjdev__skill__item__text HTML5
+                        ul.cjdev__skill__list.cjdev__skill__list--some
+                            li.cjdev__skill__item
+                                i.devicon-php-plain
+                                span.cjdev__skill__item__text PHP
+                            li.cjdev__skill__item
+                                i.devicon-python-plain
+                                span.cjdev__skill__item__text Python
+                        ul.cjdev__skill__list.cjdev__skill__list--few
+                            li.cjdev__skill__item
+                                i.devicon-csharp-plain
+                                span.cjdev__skill__item__text C#
+                            li.cjdev__skill__item
+                                i.devicon-java-plain
+                                span.cjdev__skill__item__text Java
+                            li.cjdev__skill__item
+                                i.devicon-bash-plain
+                                span.cjdev__skill__item__text Bash
+                            li.cjdev__skill__item
+                                span.cjdev__skill__item__text Visual Basic
+                    article.cjdev__skill
+                        h5.cjdev__skill__title Databases
+                        ul.cjdev__skill__list.cjdev__skill__list--many
+                            li.cjdev__skill__item
+                                i.devicon-mysql-plain
+                                span.cjdev__skill__item__text MySQL
+                        ul.cjdev__skill__list.cjdev__skill__list--some
+                            li.cjdev__skill__item
+                                i.devicon-postgresql-plain
+                                span.cjdev__skill__item__text PostgreSQL
+                        ul.cjdev__skill__list.cjdev__skill__list--few
+                            li.cjdev__skill__item
+                                i.devicon-sqlite-plain
+                                span.cjdev__skill__item__text SQLite
+                            li.cjdev__skill__item
+                                i.devicon-mongodb-plain
+                                span.cjdev__skill__item__text Mongo DB
+                    article.cjdev__skill
+                        h5.cjdev__skill__title Version Control
+                        ul.cjdev__skill__list.cjdev__skill__list--many
+                            li.cjdev__skill__item
+                                i.devicon-git-plain
+                                span.cjdev__skill__item__text Git
+                        //- ul.cjdev__skill__list.cjdev__skill__list--some
+                        ul.cjdev__skill__list.cjdev__skill__list--few
+                            li.cjdev__skill__item
+                                i.devicon-subversion-plain
+                                span.cjdev__skill__item__text SVN
+                    article.cjdev__skill
+                        h5.cjdev__skill__title Frameworks/Libraries/Other
+                        ul.cjdev__skill__list.cjdev__skill__list--many
+                            li.cjdev__skill__item
+                                i.devicon-sass-original
+                                span.cjdev__skill__item__text SASS
+                        ul.cjdev__skill__list.cjdev__skill__list--some
+                            li.cjdev__skill__item
+                                i.devicon-jquery-plain
+                                span.cjdev__skill__item__text jQuery
+                            li.cjdev__skill__item
+                                i.devicon-bootstrap-plain
+                                span.cjdev__skill__item__text Bootstrap
+                            li.cjdev__skill__item
+                                i.devicon-wordpress-plain
+                                span.cjdev__skill__item__text Wordpress
+                            li.cjdev__skill__item
+                                i.devicon-pandas-plain
+                                span.cjdev__skill__item__text Pandas
+                            li.cjdev__skill__item
+                                i.devicon-jupyter-plain-wordmark
+                                span.cjdev__skill__item__text Jupyter
+                        ul.cjdev__skill__list.cjdev__skill__list--few
+                            li.cjdev__skill__item
+                                i.devicon-nodejs-plain
+                                span.cjdev__skill__item__text Node JS
+                            li.cjdev__skill__item
+                                i.devicon-react-plain
+                                span.cjdev__skill__item__text React
+                            li.cjdev__skill__item
+                                i.devicon-angularjs-plain
+                                span.cjdev__skill__item__text Angular JS
+                            li.cjdev__skill__item
+                                i.devicon-grunt-plain
+                                span.cjdev__skill__item__text Grunt
+                            li.cjdev__skill__item
+                                i.devicon-bower-plain
+                                span.cjdev__skill__item__text Bower
+                            li.cjdev__skill__item
+                                i.devicon-gulp-plain
+                                span.cjdev__skill__item__text Gulp
+                            li.cjdev__skill__item
+                                span.cjdev__skill__item__text Pug
+                            li.cjdev__skill__item
+                                span.cjdev__skill__item__text Stylus
+                            li.cjdev__skill__item
+                                span.cjdev__skill__item__text Primefaces
+                            li.cjdev__skill__item
+                                span.cjdev__skill__item__text Jakarta EE
+                            li.cjdev__skill__item
+                                span.cjdev__skill__item__text Docker
+                    article.cjdev__skill
+                        h5.cjdev__skill__title Software
+                        ul.cjdev__skill__list.cjdev__skill__list--many
+                            li.cjdev__skill__item
+                                i.devicon-vscode-plain
+                                span.cjdev__skill__item__text VS Code
+                            li.cjdev__skill__item
+                                span.cjdev__skill__item__text Responsively App
+                            li.cjdev__skill__item
+                                span.cjdev__skill__item__text Prepros
+                        ul.cjdev__skill__list.cjdev__skill__list--some
+                            li.cjdev__skill__item
+                                span.cjdev__skill__item__text Google Sheet
+                        ul.cjdev__skill__list.cjdev__skill__list--few
+                            li.cjdev__skill__item
+                                i.devicon-photoshop-plain
+                                span.cjdev__skill__item__text Photoshop
+                            li.cjdev__skill__item
+                                i.devicon-illustrator-plain
+                                span.cjdev__skill__item__text Illustrator
+                            li.cjdev__skill__item
+                                i.devicon-putty-plain
+                                span.cjdev__skill__item__text Putty
+                            li.cjdev__skill__item
+                                i.devicon-debian-plain
+                                span.cjdev__skill__item__text Debian
+                            li.cjdev__skill__item
+                                i.devicon-linux-plain
+                                span.cjdev__skill__item__text Linux
+                            li.cjdev__skill__item
+                                i.devicon-figma-plain
+                                span.cjdev__skill__item__text Figma
+                            li.cjdev__skill__item
+                                i.devicon-gimp-plain
+                                span.cjdev__skill__item__text Gimp
+                            li.cjdev__skill__item
+                                i.devicon-filezilla-plain
+                                span.cjdev__skill__item__text Filezilla
+                            li.cjdev__skill__item
+                                span.cjdev__skill__item__text XAMPP
+                            li.cjdev__skill__item
+                                span.cjdev__skill__item__text Glassfish
+            footer.cjdev__footer
+                p Languages & Libraries: Pug, SASS, Javascript, Font Awesome, Devicon.
+                p Software: Prepros, Responsively App.
+            script(src="./js/index.js")

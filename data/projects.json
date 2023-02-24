@@ -1,0 +1,171 @@
+[
+    {
+        "id": "001",
+        "title": "Parsel Translator",
+        "type": "personal",
+        "typeText": "Personal Project",
+        "links": [
+            {
+                "icon": "devicon-github-plain",
+                "type": "code",
+                "link": "https://github.com/jhossyd3v/parseltranslator"
+            },
+            {
+                "icon": "",
+                "type": "link",
+                "link": "https://parseltranslator.netlify.app"
+            }
+        ],
+        "descriptions": [
+            "In the world of Harry Potter there is a language to talk with the snakes, it's called Parseltongue.",
+            "As a Potterhead I decided to build a translator Human-Parsel & Parsel-Human."
+        ],
+        "tags": [
+            "Web",
+            "Responsive Design"
+        ],
+        "technologies": [
+            {
+                "icon": "devicon-javascript-plain",
+                "text": "Javascript"
+            },
+            {
+                "icon": "devicon-sass-plain",
+                "text": "Sass"
+            },
+            {
+                "icon": "devicon-html5-plain",
+                "text": "HTML5"
+            },
+            {
+                "icon": "devicon-css3-plain",
+                "text": "CSS3"
+            },
+            {
+                "icon": "",
+                "text": "Font Awesome"
+            },
+            {
+                "icon": "",
+                "text": "Normalize"
+            }
+        ],
+        "previewImages": {
+            "desktop": 1,
+            "mobile": 0
+        }
+    },
+    {
+        "id": "002",
+        "title": "Pokédex",
+        "type": "challenge",
+        "typeText": "Code Challenge",
+        "links": [
+            {
+                "icon": "devicon-github-plain",
+                "type": "code",
+                "link": "https://github.com/jhossyd3v/hpp_project"
+            },
+            {
+                "icon": "",
+                "type": "link",
+                "link": "https://jhossymar-hppproject.netlify.app"
+            }
+        ],
+        "descriptions": [
+            "A Pokedex that shows all pokemons of the first generation consuming the Poke API."
+        ],
+        "tags": [
+            "Web",
+            "Responsive Design"
+        ],
+        "technologies": [
+            {
+                "icon": "devicon-javascript-plain",
+                "text": "Javascript"
+            },
+            {
+                "icon": "devicon-sass-plain",
+                "text": "Sass"
+            },
+            {
+                "icon": "devicon-html5-plain",
+                "text": "HTML5"
+            },
+            {
+                "icon": "devicon-css3-plain",
+                "text": "CSS3"
+            },
+            {
+                "icon": "",
+                "text": "Poke API"
+            },
+            {
+                "icon": "",
+                "text": "Local Storage"
+            },
+            {
+                "icon": "",
+                "text": "Normalize"
+            }
+        ],
+        "previewImages": {
+            "desktop": 1,
+            "mobile": 0
+        }
+    },
+    {
+        "id": "003",
+        "title": "World Cup Draw Simulator",
+        "type": "company",
+        "typeText": "LPG",
+        "links": [
+            {
+                "icon": "",
+                "type": "link",
+                "link": "http://multimedia.laprensagrafica.com/demo/world-cup-simulator/"
+            }
+        ],
+        "descriptions": [
+            "A simulator of the groups draw for the World Cup Qatar 2002."
+        ],
+        "tags": [
+            "Web",
+            "Responsive Design"
+        ],
+        "technologies": [
+            {
+                "icon": "devicon-javascript-plain",
+                "text": "Javascript"
+            },
+            {
+                "icon": "devicon-sass-plain",
+                "text": "Sass"
+            },
+            {
+                "icon": "devicon-html5-plain",
+                "text": "HTML5"
+            },
+            {
+                "icon": "devicon-css3-plain",
+                "text": "CSS3"
+            },
+            {
+                "icon": "",
+                "text": "flag-icons"
+            },
+            {
+                "icon": "",
+                "text": "Local Storage"
+            },
+            {
+                "icon": "",
+                "text": "Normalize"
+            }
+        ],
+        "previewImages": {
+            "desktop": 1,
+            "mobile": 0
+        }
+    }
+]
