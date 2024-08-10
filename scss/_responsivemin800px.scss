@@ -17,7 +17,25 @@
 
         &:hover {
           background-color: colors.$dark-gunmetal;
-          color: colors.$liberty;
+          color: colors.$ghost-white;
+          position: relative;
+
+          &::before,
+          &::after {
+            background-color: colors.$liberty;
+            bottom: -2px;
+            content: "";
+            display: block;
+            height: 5px;
+            position: absolute;
+            width: 35px;
+          }
+
+          &::after {
+            border-radius: 50%;
+            left: 38px;
+            width: 5px;
+          }
         }
       }
 

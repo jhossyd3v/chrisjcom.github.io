@@ -50,7 +50,6 @@ body {
 
       &:hover {
         background-color: colors.$liberty;
-        color: colors.$dark-gunmetal;
       }
     }
 
@@ -246,6 +245,11 @@ body {
       font-weight: bold;
       padding: 10px;
       text-decoration: none;
+
+      &:hover {
+        background-color: colors.$ghost-white;
+        color: colors.$liberty;
+      }
     }
 
     &__icon {

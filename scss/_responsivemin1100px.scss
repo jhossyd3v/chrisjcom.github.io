@@ -1,0 +1,7 @@
+@media screen and (min-width: 1100px) {
+  .cjdev {
+    &__section {
+      padding: 20px calc((100vw - 1008px) / 2);
+    }
+  }
+}
